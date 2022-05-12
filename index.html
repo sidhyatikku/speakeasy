@@ -1,0 +1,56 @@
+
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="styles/main.css">
+  <title>speakEasy</title>
+</head>
+
+<body>
+  <div class="title_speak">speakEasy</div>
+  <div class="placeholder_speak">Convert your favorite books, articles, essays to audiobooks!</div>
+  <div class="main_body_window">
+
+        <form class="form_speak">
+          <div class="text_window">
+            <textarea name="text-box" id="text-input" placeholder="Paste your text here :)"></textarea>
+          </div>
+          <div class="form_settings_main_window">
+
+            <div class="settings_text">
+              1. Paste your text <br>
+              2. Select your desired speed and pitch <br>
+              3. Select your voice and language <br>
+              4. Smash that speak button! <br>
+
+            </div>
+
+            <div class="form_speak_settings">
+                <div class="speed_settings">
+                  <label for="rate">Speed</label>
+                  <div id="rate-value"></div>
+                  <input type="range" id="rate" class="custom-range" min="0.5" max="2" value="1" step="0.1">
+                </div>
+
+                <div class="pitch_settings">
+                  <label for="pitch">Pitch</label>
+                  <div id="pitch-value"></div>
+                  <input type="range" id="pitch" class="custom-range" min="0" max="2" value="1" step="0.1">
+                </div>
+
+              <select id="voice-select"></select>
+              <button class="speak_button">LISTEN</button>
+            </div>
+          </div>
+        </form>
+
+  </div>
+  <script src="main.js"></script>
+
+
+</body>
+
+</html>
